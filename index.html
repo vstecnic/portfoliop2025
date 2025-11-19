@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Juan Gabriel Soto Valenzuela</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <span class="brand-brackets">&lt;</span>
+                <span class="brand-text">PORTFOLIO</span>
+                <span class="brand-brackets">/&gt;</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                    <p class="hero-greeting" id="heroGreeting">Hola, mi nombre es</p>
+                    <h1 class="hero-name" id="heroName">[Tu Nombre]</h1>
+                    <h2 class="hero-title" id="heroTitle">[Tu Título Profesional]</h2>
+                    <p class="hero-description" id="heroDescription">
+                        Soy un desarrollador full-stack apasionado por crear soluciones digitales innovadoras.
+                        Especializado en transformar ideas en experiencias web excepcionales.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="https://wa.me/5491135008496?text=Hola%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20tus%20proyectos"
+                           target="_blank"
+                           class="btn btn-whatsapp btn-lg"
+                           data-aos="zoom-in"
+                           data-aos-delay="200">
+                            <i class="bi bi-whatsapp"></i> Conversemos por WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about"><i class="bi bi-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto" data-aos="fade-up">
+                    <h2 class="section-title">Sobre Mí</h2>
+                    <div class="about-content">
+                        <p id="aboutDescription">
+                            Con más de X años de experiencia en desarrollo web, me especializo en crear
+                            aplicaciones escalables y eficientes. Mi enfoque se centra en escribir código
+                            limpio, mantenible y orientado a solucionar problemas reales de negocio.
+                        </p>
+                        <p id="aboutDescription2">
+                            Cuando no estoy programando, me apasiona aprender nuevas tecnologías,
+                            contribuir a proyectos open source y compartir conocimiento con la comunidad.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section-padding bg-darker">
+        <div class="container">
+            <h2 class="section-title text-center" data-aos="fade-up">Proyectos Destacados</h2>
+            <p class="section-subtitle text-center mb-5" data-aos="fade-up" data-aos-delay="100">
+                Algunos de los trabajos que he realizado
+            </p>
+
+            <div id="projectsGrid" class="row g-4">
+                <!-- Projects will be rendered here by JavaScript -->
+            </div>
+
+            <div id="noProjectsMessage" class="text-center mt-5 d-none">
+                <i class="bi bi-folder-x display-1 text-muted"></i>
+                <p class="text-muted mt-3">No hay proyectos para mostrar. Usa el Modo Admin para agregar tu primer proyecto.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <h2 class="section-title text-center" data-aos="fade-up">Habilidades & Tecnologías</h2>
+            <p class="section-subtitle text-center mb-5" data-aos="fade-up" data-aos-delay="100">
+                Herramientas y tecnologías con las que trabajo
+            </p>
+
+            <div class="row g-4" id="skillsGrid">
+                <!-- Skills will be rendered here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section-padding bg-darker">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                    <h2 class="section-title">¿Trabajamos Juntos?</h2>
+                    <p class="section-subtitle mb-5">
+                        Estoy disponible para nuevos proyectos y colaboraciones.
+                        ¡Conversemos sobre cómo puedo ayudarte!
+                    </p>
+
+                    <div class="contact-methods">
+                        <a href="https://wa.me/5491135008496?text=Hola%2C%20me%20interesa%20trabajar%20contigo"
+                           target="_blank"
+                           class="btn btn-whatsapp btn-lg mb-3">
+                            <i class="bi bi-whatsapp"></i> WhatsApp
+                        </a>
+
+                        <div class="social-links mt-4">
+                            <a href="https://linkedin.com/in/juan-gabriel-soto-valenzuela/" class="social-link" id="socialLinkedin" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/vstecnic" class="social-link" id="socialGithub" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a href="mailto:vstecnic@gmail.com" class="social-link" id="socialEmail">
+                                <i class="bi bi-envelope-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="footer-text mb-2">Diseñado y Desarrollado by Juan Gabriel Soto Valenzuela</p>
+                    <p class="footer-copyright">© <span id="currentYear"></span> - Todos los derechos reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ADMIN MODAL -->
+    <div class="modal fade" id="adminModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <i class="bi bi-gear-fill"></i> Panel de Administración
+                    </h5>
+                    <div>
+                        <button type="button" class="btn btn-danger btn-sm me-2" id="resetDataBtn">
+                            <i class="bi bi-arrow-clockwise"></i> Resetear Datos
+                        </button>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                </div>
+                <div class="modal-body">
+
+                    <!-- TABS -->
+                    <ul class="nav nav-tabs mb-4" id="adminTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="hero-tab" data-bs-toggle="tab" data-bs-target="#hero-panel" type="button">
+                                <i class="bi bi-house-fill"></i> Hero
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="about-tab" data-bs-toggle="tab" data-bs-target="#about-panel" type="button">
+                                <i class="bi bi-person-fill"></i> Sobre Mí
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="projects-tab" data-bs-toggle="tab" data-bs-target="#projects-panel" type="button">
+                                <i class="bi bi-folder-fill"></i> Proyectos
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="skills-tab" data-bs-toggle="tab" data-bs-target="#skills-panel" type="button">
+                                <i class="bi bi-code-slash"></i> Habilidades
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-panel" type="button">
+                                <i class="bi bi-envelope-fill"></i> Contacto
+                            </button>
+                        </li>
+                    </ul>
+
+                    <!-- TAB CONTENT -->
+                    <div class="tab-content" id="adminTabContent">
+
+                        <!-- HERO TAB -->
+                        <div class="tab-pane fade show active" id="hero-panel">
+                            <form id="heroForm">
+                                <div class="mb-3">
+                                    <label class="form-label">Saludo Inicial</label>
+                                    <input type="text" class="form-control" id="editGreeting" placeholder="Hola, mi nombre es">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Tu Nombre</label>
+                                    <input type="text" class="form-control" id="editName" placeholder="Juan Pérez" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Título Profesional</label>
+                                    <input type="text" class="form-control" id="editTitle" placeholder="Desarrollador Full Stack" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Descripción Breve</label>
+                                    <textarea class="form-control" id="editHeroDescription" rows="3" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="bi bi-save"></i> Guardar Cambios
+                                </button>
+                            </form>
+                        </div>
+
+                        <!-- ABOUT TAB -->
+                        <div class="tab-pane fade" id="about-panel">
+                            <form id="aboutForm">
+                                <div class="mb-3">
+                                    <label class="form-label">Descripción - Párrafo 1</label>
+                                    <textarea class="form-control" id="editAboutDesc1" rows="3" required></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Descripción - Párrafo 2</label>
+                                    <textarea class="form-control" id="editAboutDesc2" rows="3" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="bi bi-save"></i> Guardar Cambios
+                                </button>
+                            </form>
+                        </div>
+
+                        <!-- PROJECTS TAB -->
+                        <div class="tab-pane fade" id="projects-panel">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <h5>Gestión de Proyectos</h5>
+                                <button class="btn btn-success" id="addProjectBtn">
+                                    <i class="bi bi-plus-lg"></i> Agregar Proyecto
+                                </button>
+                            </div>
+
+                            <!-- Projects Table -->
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Título</th>
+                                            <th>Tecnologías</th>
+                                            <th>Acciones</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="projectsTableBody">
+                                        <!-- Projects rows will be rendered here -->
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Project Form (Hidden initially) -->
+                            <div id="projectFormContainer" class="mt-4 d-none">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h6 class="mb-0" id="projectFormTitle">Agregar Nuevo Proyecto</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <form id="projectForm">
+                                            <input type="hidden" id="projectId">
+                                            <div class="row">
+                                                <div class="col-md-6 mb-3">
+                                                    <label class="form-label">Título del Proyecto</label>
+                                                    <input type="text" class="form-control" id="projectTitle" required>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label class="form-label">URL del Proyecto</label>
+                                                    <input type="url" class="form-control" id="projectUrl" placeholder="https://" required>
+                                                </div>
+                                                <div class="col-12 mb-3">
+                                                    <label class="form-label">URL de la Imagen/Miniatura</label>
+                                                    <input type="url" class="form-control" id="projectImage" placeholder="https://..." required>
+                                                    <small class="form-text text-muted">Recomendado: 600x400px</small>
+                                                </div>
+                                                <div class="col-12 mb-3">
+                                                    <label class="form-label">Detalle del Proyecto</label>
+                                                    <textarea class="form-control" id="projectDetail" rows="3" required></textarea>
+                                                </div>
+                                                <div class="col-12 mb-3">
+                                                    <label class="form-label">Tecnologías Utilizadas (separadas por comas)</label>
+                                                    <input type="text" class="form-control" id="projectTechs" placeholder="React, Node.js, MongoDB" required>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex gap-2">
+                                                <button type="submit" class="btn btn-primary">
+                                                    <i class="bi bi-save"></i> Guardar Proyecto
+                                                </button>
+                                                <button type="button" class="btn btn-secondary" id="cancelProjectBtn">
+                                                    Cancelar
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SKILLS TAB -->
+                        <div class="tab-pane fade" id="skills-panel">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <h5>Gestión de Habilidades</h5>
+                                <button class="btn btn-success" id="addSkillBtn">
+                                    <i class="bi bi-plus-lg"></i> Agregar Habilidad
+                                </button>
+                            </div>
+
+                            <!-- Skills Table -->
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Nombre</th>
+                                            <th>Acciones</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="skillsTableBody">
+                                        <!-- Skills rows will be rendered here -->
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Skill Form (Hidden initially) -->
+                            <div id="skillFormContainer" class="mt-4 d-none">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h6 class="mb-0" id="skillFormTitle">Agregar Nueva Habilidad</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <form id="skillForm">
+                                            <input type="hidden" id="skillId">
+                                            <div class="row">
+                                                <div class="col-md-6 mb-3">
+                                                    <label class="form-label">Nombre de la Habilidad</label>
+                                                    <input type="text" class="form-control" id="skillName" placeholder="JavaScript" required>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label class="form-label">Icono (Bootstrap Icons)</label>
+                                                    <input type="text" class="form-control" id="skillIcon" placeholder="bi-code-slash" required>
+                                                    <small class="form-text text-muted">
+                                                        Ver iconos en: <a href="https://icons.getbootstrap.com/" target="_blank">Bootstrap Icons</a>
+                                                    </small>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex gap-2">
+                                                <button type="submit" class="btn btn-primary">
+                                                    <i class="bi bi-save"></i> Guardar Habilidad
+                                                </button>
+                                                <button type="button" class="btn btn-secondary" id="cancelSkillBtn">
+                                                    Cancelar
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTACT TAB -->
+                        <div class="tab-pane fade" id="contact-panel">
+                            <form id="contactForm">
+                                <div class="mb-3">
+                                    <label class="form-label">LinkedIn URL</label>
+                                    <input type="url" class="form-control" id="editLinkedin" placeholder="https://linkedin.com/in/tu-perfil">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">GitHub URL</label>
+                                    <input type="url" class="form-control" id="editGithub" placeholder="https://github.com/tu-usuario">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="editEmail" placeholder="tu@email.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Texto del Footer</label>
+                                    <input type="text" class="form-control" id="editFooter" placeholder="© 2024 - Todos los derechos reservados">
+                                </div>
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="bi bi-save"></i> Guardar Cambios
+                                </button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="successToast" class="toast align-items-center text-white bg-success border-0" role="alert">
+            <div class="d-flex">
+                <div class="toast-body">
+                    <i class="bi bi-check-circle-fill me-2"></i>
+                    <span id="toastMessage">Cambios guardados correctamente</span>
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
