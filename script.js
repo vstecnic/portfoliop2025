@@ -32,7 +32,7 @@ const defaultData = {
             title: 'Portal de reseñas gastronómicas',
             image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=400&fit=crop',
             url: 'https://desplieguesjgsv.free.nf/?i=1',
-            detail: 'Entre sus funciones contiene: Sign In/Log In de usuarios con comprobación de correo electrónico, Dashboard User para ver las reseñas realizadas, y sistema de reseñas con cards que contienen puntuación, detalle, imágenes y videos para incrustar. (2025)',
+            detail: 'Entre sus funciones contiene: Sign In/Log In de usuarios con comprobación de correo electrónico, Dashboard User para ver las reseñas realizadas y sistema de reseñas con cards que contienen puntuación, detalle, imágenes y videos para incrustar. (2025)',
             techs: ['PHP', 'MySQL', 'HTML', 'CSS', 'JavaScript']
         },
         {
@@ -64,7 +64,7 @@ const defaultData = {
             title: 'Myhouse',
             image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop',
             url: 'https://myhouse.com.ar/',
-            detail: 'Portal web de publicación de venta de inmuebles. Contiene detalles de publicaciones, filtros, búsqueda por ambientes, y blog de noticias. (2023)',
+            detail: 'Portal web de publicación de venta de inmuebles. Contiene detalles de publicaciones, filtros, búsqueda por ambientes y blog de noticias. (2023)',
             techs: ['WordPress', 'PHP', 'MySQL']
         },
         {
@@ -72,7 +72,7 @@ const defaultData = {
             title: 'Cava Digital de Vinos',
             image: 'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600&h=400&fit=crop',
             url: 'https://vstecnic.github.io/cavaDeVinos/',
-            detail: 'Sitio pequeño que tiene como finalidad mostrar los vinos disponibles de un cliente en su cava. La idea era que muestre el link a sus invitados, y pudieran ver o seleccionar qué vino disfrutar, sin abrir la cava. Conteniendo los detalles como Tipo de Vino, Cepa, Zona, su descripción y link de la bodega que lo produjo. (2024)',
+            detail: 'Sitio pequeño que tiene como finalidad mostrar los vinos disponibles de un cliente en su cava. La idea era que muestre el link a sus invitados y pudieran ver o seleccionar qué vino disfrutar, sin abrir la cava. Conteniendo los detalles como Tipo de Vino, Cepa, Zona, su descripción y link de la bodega que lo produjo. (2024)',
             techs: ['HTML', 'CSS', 'JavaScript']
         },
         {
@@ -80,7 +80,7 @@ const defaultData = {
             title: 'Petit Malbec Sommelier',
             image: 'https://images.unsplash.com/photo-1547595628-c61a29f496f0?w=600&h=400&fit=crop',
             url: 'https://vstecnic.github.io/TalentoTechFrontEnd_V2Final/',
-            detail: 'Sitio web publicitario con los servicios de un sommelier profesional. Entre sus detalles se ven, presentación, servicios, formulario de contacto, y un carrito simulado con JS para agregar y realizar compra de los servicios y/o productos que se ofrecen. Contiene una pequeña integración con IG y WhatsApp para contacto. (2024)',
+            detail: 'Sitio web publicitario con los servicios de un sommelier profesional. Entre sus detalles se ven, presentación, servicios, formulario de contacto y un carrito simulado con JS para agregar y realizar compra de los servicios y/o productos que se ofrecen. Contiene una pequeña integración con IG y WhatsApp para contacto. (2024)',
             techs: ['HTML', 'CSS', 'JavaScript', 'Bootstrap']
         },
         {
