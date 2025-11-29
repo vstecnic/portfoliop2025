@@ -32,7 +32,7 @@ const defaultData = {
             title: 'Portal de reseñas gastronómicas',
             image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=400&fit=crop',
             url: 'https://desplieguesjgsv.free.nf/?i=1',
-            detail: 'Entre sus funciones contiene: Sign In/Log In de usuarios con comprobación de correo electrónico, Dashboard User para ver las reseñas realizadas y sistema de reseñas con cards que contienen puntuación, detalle, imágenes y videos para incrustar. (2025)',
+            detail: 'Entre sus funciones contiene: Sign up/Log In de usuarios con comprobación de correo electrónico, Dashboard User para ver las reseñas realizadas y sistema de reseñas con cards que contienen puntuación, detalle, imágenes y videos para incrustar. (2025)',
             techs: ['PHP', 'MySQL', 'HTML', 'CSS', 'JavaScript']
         },
         {
