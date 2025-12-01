@@ -23,8 +23,8 @@ const defaultData = {
         description: 'Soy Técnico Informático y Superior en Desarrollador web y Aplicaciones Digitales. Busco constantemente contribuir y participar de soluciones y servicios que faciliten la vida y trabajo de personas. Soy apasionado, entusiasta y atento a aprender, comunicar y trabajar cordialmente tanto en equipo como de forma individual.'
     },
     about: {
-        description1: 'Como Técnico Informático y Superior en Desarrollador web y Aplicaciones Digitales, me especializo en crear soluciones web completas y funcionales. Mi experiencia abarca desde el desarrollo frontend con HTML, CSS, JavaScript y Angular, hasta implementaciones backend con PHP, Python, Django y Node.js.',
-        description2: 'Cada proyecto que desarrollo representa mi compromiso con la excelencia técnica y la innovación. Me apasiona transformar ideas en aplicaciones digitales que realmente impacten en la vida de las personas, trabajando tanto de forma individual como en equipos colaborativos.'
+        description1: 'Como Informático y Desarrollador, busco crear soluciones web completas y funcionales. Mi experiencia abarca desde el desarrollo frontend con HTML, CSS, JavaScript y Angular, hasta implementaciones backend con PHP, Python, Django y Node.js.',
+        description2: 'Cada proyecto que desarrollo representa mi compromiso con la excelencia técnica y la innovación. Me apasiona transformar ideas en aplicaciones digitales que realmente impacten en la vida de las personas, trabajando tanto de forma individual como en equipos colaborativos, y sobretodo que sea accesible para utilizar para cualquier persona.'
     },
     projects: [
         {
